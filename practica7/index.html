@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 7 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Automatización Industrial</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <h1><b>Práctica 7: Desarrollo de una aplicación de Red Local</b></h1>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <img class="img-fluid rounded-circle" width="50px" src="/assets/Cristobal.jpg" alt="..." />
+                        <div class="ms-2">
+                            <div class="fw-bold">Cristobal Lopez Apango</div>
+                            <div class="text-muted">Ing. Mecatrónica</div>
+                        </div>
+                        <img class="img-fluid rounded-circle" width="50px" src="/assets/agustin.png" alt="..." />
+                        <div class="ms-2">
+                            <div class="fw-bold">AHUMADA RAMIREZ AGUSTIN ALBERTO</div>
+                            <div class="text-muted">Ing. Mecatrónica</div>
+                        </div>
+                        <!--Aqui termina etiqueta de alumno-->
+                        <div class="text-muted fst-italic mt-2 mb-2">Primavera2024</div>
+                    </header>
+                </div>
+            </section>
+            <div class="container">
+                <!-- Seccion de CONTENIDO de la Práctica-->
+                <section>
+                    <h1>Resumen</h1>
+                    <p>Las redes de computadoras son esenciales en todos los sectores, abarcando desde configuraciones simples hasta sistemas altamente complejos, permitiendo la comunicación global de manera efectiva.
+
+                        En esta práctica se realizó una introducción al uso del software Cisco Packet Tracer, el cual es una herramienta fundamental para la simulación y creación de redes digitales, facilitando el aprendizaje y la implementación de soluciones de red.</p>
+                    <h2>Introducción</h2>
+                    <p>En esta práctica de Redes Digitales, utilizamos el software Packet Tracer de Cisco para simular una red local en una escuela. La red comprende cuatro salas de cómputo con 12 computadoras cada una, y una sala administrativa con 7 computadoras. Asignamos direcciones IP del rango 192.168.8.0 y verificamos la conectividad mediante el comando "ping". Para extender la red más de 100 metros, utilizamos repetidores y switches, conectando todos los equipos al router principal de la oficina administrativa. También elaboramos un diagrama físico y una tabla comparativa de la distribución de equipos e IPs.</p>
+                    <h2>Objetivo General</h2>
+                    <p>Conocer, investigar e identificar los elementos que se utilizan para configurar una red local y el acceso a recursos de un equipo en red.</p>
+                    <h2>Objetivos Específicos</h2>
+                    <ul>
+                        <li>Utilizando el programa de Packet Tracer de Cisco, simular las siguientes redes de computadora, asignando a las computadoras las IP pertenecientes a la red 192.168.0.0.</li>
+                        <li>Utilizar la ventana de comandos para la función ping y verificar la comunicación entre cada una de las computadoras.</li>
+                        <li>Grabar un video de cada red simulada.</li>
+                    </ul>
+                    <p>Materiales:</p>
+                    <ul>
+                        <li>Cisco Packet Tracer</li>
+                    </ul>
+                    <h2>Resultados</h2>
+                    <h3>Distribucion de la red</h3>
+                    <figure>
+                      <img src="./assets/distred1-1.jpeg" width="600px" alt="Distribucion de la red">
+                      <figcaption>Figura 1. Red local 1</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="./assets/distred1-2.jpeg" width="600px" alt="Ajustes de las ips">
+                      <figcaption>Figura 2. Para cada una de las 55 computadoras se asigno manualmente la ip comenzando por la 192.168.8.2 ya que la .1 esta reservada para el router.</figcaption>
+                    </figure>
+                    
+                    <h3>Comunicacion entre 5 dispositivos</h3>
+                    <p>Para comunicar 5 dispositivos al mismo tiempo se hizo un ping simultaneo en 5 terminales para observar el flujo de los datos en la red.</p>
+                    <figure>
+                      <img src="./assets/5dispos.jpeg" width="600px" alt="Distribucion de la red">
+                      <figcaption>Figura 3. Terminales haciendo ping</figcaption>
+                    </figure>
+                    <video width="640" controls>
+                        <source src="./assets/5dispos.mp4" type="video/mp4">
+                    </video>
+                    <h3>Tablas</h3>
+                    <figure>
+                      <img src="./assets/tablas-1.jpeg" width="600px" alt="tabla 1">
+                      <figcaption>Figura 4. Tabla 1</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="./assets/tablas-2.jpeg" width="600px" alt="tabla 2">
+                      <figcaption>Figura 5. Tabla 2.</figcaption>
+                    </figure>
+                        <figure>
+                          <img src="./assets/tablas-3.jpeg" width="600px" alt="tabla 3">
+                          <figcaption>Figura 6. Tabla 3</figcaption>
+                        </figure>
+                        <figure>
+                          <img src="./assets/tablas-4.jpeg" width="600px" alt="tabla 4">
+                          <figcaption>Figura 7. Tabla 4.</figcaption>
+                        </figure>
+                        <figure>
+                          <img src="./assets/tablas-5.jpeg" width="600px" alt="tabla 5">
+                          <figcaption>Figura 8. Tabla 5</figcaption>
+                        </figure>
+                        <figure>
+                          <img src="./assets/tablas-6.jpeg" width="600px" alt="tabla 6">
+                          <figcaption>Figura 9. Tabla 6.</figcaption>
+                        </figure>
+                    <h2>Conclusiones</h2>
+                    <p>Los objetivos establecidos fueron alcanzados satisfactoriamente, ya que logramos implementar y probar la simulación de cuatro diferentes configuraciones de red utilizando el software Cisco Packet Tracer. Durante las pruebas, los mensajes se transmitieron correctamente entre los equipos conectados, empleando switches y repetidores. Esto demuestra la eficacia de la configuración de los dispositivos y la correcta implementación de los protocolos de comunicación, confirmando así la validez de los resultados obtenidos y el cumplimiento de los objetivos propuestos al inicio de la práctica.</p>
+                    
+                </section>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
