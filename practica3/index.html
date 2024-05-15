@@ -1,0 +1,152 @@
+                    <!DOCTYPE html>
+                    <html lang="en">
+                        <head>
+                            <meta charset="utf-8" />
+                            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                            <meta name="description" content="" />
+                            <meta name="author" content="" />
+                            <title>Práctica 3 | Ibero Puebla</title>
+                            <!-- Favicon-->
+                            <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+                            <!-- Bootstrap icons-->
+                            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+                            <!-- Core theme CSS (includes Bootstrap)-->
+                            <link href="css/styles.css" rel="stylesheet" />
+                        </head>
+                        <body class="d-flex flex-column h-100">
+                            <main class="flex-shrink-0">
+                                <!-- Navigation-->
+                                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                                    <div class="container px-5">
+                                        <a class="navbar-brand">Menu</a>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                                <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                                                <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+
+                                <!-- Seccion TITULO de Portafolio-->
+                                <header class="bg-primary py-2 mt-5">
+                                    <div class="container px-5">
+                                        <div class="row gx-5 align-items-center justify-content-center">
+                                            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                                                <div class="my-5 text-center text-xl-start">
+                                                    <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                                    <h1 class="display-8 fw-bolder text-white mb-2">Automatización Industrial</h1>
+                                                    <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+
+                                <!-- Seccion TITULO de la Práctica-->
+                                <section class="py-3" id="scroll-target">
+                                    <div class="container px-5 my-2">
+                                        <h1><b>Práctica 3: Protocolo de Comunicación Asíncrono</b></h1>
+                                        <!-- Post header-->
+                                        <header class="mb-4">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <img class="img-fluid rounded-circle" width="50px" src="/assets/Cristobal.jpg" alt="..." />
+                                                <div class="ms-2">
+                                                    <div class="fw-bold">Cristobal Lopez Apango</div>
+                                                    <div class="text-muted">Ing. Mecatrónica</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <img class="img-fluid rounded-circle" width="50px" src="/assets/agustin.png" alt="..." />
+                                                <div class="ms-2">
+                                                    <div class="fw-bold">AHUMADA RAMIREZ AGUSTIN ALBERTO</div>
+                                                    <div class="text-muted">Ing. Mecatrónica</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-muted fst-italic mt-2 mb-2">Primavera 2024</div>
+                                        </header>
+                                    </div>
+                                </section>
+
+                                <!-- Seccion de CONTENIDO de la Práctica-->
+                                <section>
+                                    <div class="container px-5">
+                                        <h1>Resumen</h1>
+                                        <p>Los protocolos de comunicación son esenciales en cualquier sistema inteligente, ya que permiten la transmisión eficiente y rápida de datos, crucial para el funcionamiento de sistemas, programas y aplicaciones de ingeniería. En esta práctica se exploraron diversas metodologías para la transmisión de datos entre dispositivos y su reconstrucción, destacando la importancia de seleccionar el protocolo adecuado para garantizar la integridad y la velocidad de la información intercambiada.</p>
+                                        <h2>Introducción</h2>
+                                        <p>Este informe de laboratorio se enfoca en el desarrollo y la validación de un protocolo de comunicación asíncrono. El objetivo principal es entender, identificar y confirmar el correcto funcionamiento de este protocolo mediante la implementación de un sistema basado en dos placas Arduino. Específicamente, se trata de la conversión de un valor analógico de un potenciómetro a un arreglo de variables que representan un número en binario de 8 bits, seguido de la transmisión serial de estos datos en serie desde un Arduino emisor hacia un Arduino receptor.</p>
+
+                                        <h2>Objetivo General</h2>
+                                        <p>Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación asíncrono.</p>
+
+                                        <h2>Objetivos Específicos</h2>
+                                        <ol>
+                                            <li>
+                                                <p>Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, y los deposite en un arreglo [ ]. Finalmente elaborar un código de programación que permita enviar los bits del arreglo en orden y en serie siguiendo ciertas características:</p>
+                                                <ul>
+                                                    <li>Iniciar el envío de los datos siempre con una señal HIGH (En total se enviarán 9 datos, el primer bit en HIGH y posteriormente los 8 bits de información).</li>
+                                                    <li>Enviar los datos con una duración del pulso predeterminada, ejemplo 1000 ms.</li>
+                                                    <li>Enviar siempre la misma cantidad de bits.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+
+                                        <h2>Materiales</h2>
+                                        <ul>
+                                            <li>2 Arduino</li>
+                                            <li>Protoboard</li>
+                                            <li>Botones</li>
+                                            <li>LED</li>
+                                        </ul>
+
+                                        <h2>Desarrollo</h2>
+                                        <p>Sistema de conversión y transmisión de datos:<br>
+                                        Para cumplir con el primer objetivo específico, se diseñó un sistema en un Arduino que convierte el valor analógico proporcionado por un potenciómetro en un arreglo de variables que representan un número en binario de 8 bits. Estos datos binarios se depositan en un arreglo y son enviados en serie siguiendo un protocolo específico:
+                                        <ul>
+                                            <li>Se inicia el envío de datos siempre con una señal HIGH, seguido de los 8 bits de información.</li>
+                                            <li>Cada bit se envía con una duración de pulso predeterminada, por ejemplo, 1000 ms.</li>
+                                            <li>Se garantiza que se envíe siempre la misma cantidad de bits.</li>
+                                        </ul>
+                                        Este proceso de conversión y transmisión de datos se desarrolló cuidadosamente para asegurar una comunicación efectiva y estable entre los Arduinos, demostrando así el correcto funcionamiento del protocolo asíncrono implementado.</p>
+
+                                        <p>Recepción y procesamiento de datos:<br>
+                                        En el segundo Arduino, se diseñó una función para recibir la señal de comunicación del Arduino emisor, adquirir los datos en bits, procesarlos y convertirlos en un dato decimal. Una vez convertidos, estos datos se envían al monitor serial para su visualización. Esta función fue crucial para demostrar la capacidad de recepción y decodificación de datos del Arduino receptor.</p>
+
+                                        <p>Es importante destacar que, para garantizar una comunicación efectiva entre ambos Arduinos, se conectaron las tierras de ambos dispositivos, siguiendo la recomendación proporcionada en la nota adjunta. Esta conexión aseguró un flujo de datos estable y confiable entre los dispositivos, facilitando el intercambio de información necesario para el funcionamiento adecuado del protocolo de comunicación asíncrono implementado.</p>
+                                        <h2>Conclusiones</h2>
+                                        <p>Las prácticas realizadas fueron fundamentales para familiarizarse con los conceptos esenciales en comunicaciones y envío de datos. Se destacó la importancia de considerar aspectos críticos como la velocidad de envío, la recepción y la sincronización, elementos esenciales para garantizar la efectividad en la transmisión de datos.</p>
+
+                                        <h2>Resultados</h2>
+                                        <a href=".codigos/envio.zip" download="envio.zip">Descargar codigo envio</a></br>
+                                        <a href=".codigos/recepcion.zip" download="recepcion.zip">Descargar codigo recepcion</a></br>
+                                        <video width="320" height="240" controls>
+                                            <source src="./video/video.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </section>
+                            </main>
+
+                            <!-- Footer-->
+                            <footer class="bg-dark py-4 mt-auto">
+                                <div class="container px-5">
+                                    <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                                        <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                                        <div class="col-auto">
+                                            <a class="link-light small" href="#!">Privacy</a>
+                                            <span class="text-white mx-1">&middot;</span>
+                                            <a class="link-light small" href="#!">Terms</a>
+                                            <span class="text-white mx-1">&middot;</span>
+                                            <a class="link-light small" href="#!">Contact</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+
+                            <!-- Bootstrap core JS-->
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                            <!-- Core theme JS-->
+                            <script src="js/scripts.js"></script>
+                        </body>
+                    </html>
