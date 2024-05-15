@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Práctica 8 | Ibero Puebla</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                        <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Seccion TITULO de Portafolio-->
+        <header class="bg-primary py-2 mt-6">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                            <h1 class="display-8 fw-bolder text-white mb-2">Automatización Industrial</h1>
+                            <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="py-3" id="scroll-target">
+            <div class="container px-5 my-2">
+                <h1><b>Práctica 8: Investigacion PHP, js y html</b></h1>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <img class="img-fluid rounded-circle" width="50px" src="/assets/Cristobal.jpg" alt="..." />
+                    <div class="ms-2">
+                        <div class="fw-bold">Cristobal Lopez Apango</div>
+                        <div class="text-muted">Ing. Mecatrónica</div>
+                    </div>
+                    <img class="img-fluid rounded-circle" width="50px" src="/assets/agustin.png" alt="..." />
+                    <div class="ms-2">
+                        <div class="fw-bold">AHUMADA RAMIREZ AGUSTIN ALBERTO</div>
+                        <div class="text-muted">Ing. Mecatrónica</div>
+                    </div>
+
+                    <!--Aqui termina etiqueta de alumno-->
+                    <div class="text-muted fst-italic mt-2 mb-2">Primavera 2024</div>
+                </header>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <h1>¿Qué es él lenguaje PHP?</h1>
+                <p>Es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web, diseñado para interactuar directamente con HTML.</p>
+                <h2>¿Para qué sirve el leguaje PHP?</h2>
+                <p>PHP permite generar contenido web dinámicamente, facilita la conexión y la manipulación de bases de datos, y se utiliza para procesar la información enviada desde formularios web, como registros de usuarios, comentarios, o cualquier otro tipo de entrada de usuario.</p>
+                <h2>¿Cuál es la diferencia entre los archivos HTML y PHP?</h2>
+                <p>Mientras que HTML se utiliza para definir la estructura y el contenido de una página web, PHP se utiliza para agregar funcionalidades dinámicas y procesar datos en el servidor antes de que la página se envíe al navegador del usuario.</p>
+                <p>Se utiliza para delimitar bloques de código PHP dentro de un archivo HTML u otro documento web. Cuando un servidor web procesa un archivo que contiene estas etiquetas, interpreta todo lo que está dentro de como código PHP y ejecuta las instrucciones correspondientes.</p>
+                <h2>¿Cuáles son los pasos y requisitos para cargar un archivo PHP en un servidor?</h2>
+                <ul>
+                    <li>Crear o editar el archivo PHP, debe tener la extensión ".php" y contener el código PHP con los requerimientos deseados.</li>
+                    <li>Alojar el servidor en algun servicio de alojamiento web que tenga soporte para PHP, como WebHost, GoDaddy, entre otros.</li>
+                    <li>Realizar configuraciones necesarias de permisos o los ajustes necesarios antes de hacer el despliegue del servidor.</li>
+                    <li>Una vez cargado y configurado, acceder a la URL para probar el funcionamiento de la pagina.</li>
+                </ul>
+                <h2>Elabora un programa básico “Hola mundo” con PHP, describe el funcionamiento y elementos utilizados. Inserta el programa embebido con repplit en tu página.</h2>
+                <pre><code>
+                &lt;?php
+                echo "Este es un ejemplo de código PHP mostrado como texto en HTML.\n";
+                ?&gt;
+                </code></pre>
+                <h2>¿Para qué sirve la función echo en PHP?</h2>
+                <p>Se utiliza para imprimir o mostrar contenido en la salida del navegador web.</p>
+                <h2>¿Cuál es la sintaxis de la programación en PHP?</h2>
+                <pre><code>
+                &lt;?php
+                // Codigo y logica aqui
+                ?&gt;
+                </code></pre>
+                <h2>¿Cómo se declaran variables en PHP?</h2>
+                <p>Las variables en PHP comienzan con el símbolo $, seguido del nombre de la variable.</p>
+                <pre><code>
+                &lt;?php
+                $variable = "Hola";
+                ?&gt;
+                </code></pre>
+                <h2>¿Cómo se declaran funciones en PHP?</h2>
+                <pre><code>
+                &lt;?php
+                function saludar($nombre) {
+                    echo "¡Hola, $nombre!";
+                }
+                ?&gt;
+                </code></pre>
+                <h2>¿Cómo se llaman funciones en PHP?</h2>
+                <p>Para llamar a una función en PHP, simplemente utiliza el nombre de la función seguido de paréntesis.</p>
+                <pre><code>
+                saludar("Juan");
+                </code></pre>
+                <h2>¿Cuáles ciclos de programación están disponibles en PHP?</h2>
+                <ul>
+                    <li>While</li>
+                    <li>Do while</li>
+                    <li>For</li>
+                    <li>Foreach</li>
+                </ul>
+                <h2>¿Cuáles funciones de condicional están disponibles en PHP?</h2>
+                <ul>
+                    <li>If</li>
+                    <li>Else</li>
+                    <li>Elseif</li>
+                    <li>Switch</li>
+                </ul>
+                <h2>Identifica los diferentes métodos reservados para el tratamiento de archivos.</h2>
+                <ul>
+                    <li>fopen(): Se utiliza para abrir un archivo y devuelve un identificador de archivo que se utilizará en otras funciones para realizar operaciones en el archivo abierto.</li>
+                    <li>fwrite(): Se utiliza para escribir datos en un archivo abierto en modo de escritura.</li>
+                    <li>fread(): Se utiliza para leer datos desde un archivo abierto en modo de lectura.</li>
+                    <li>fgets(): Se utiliza para leer una línea de texto desde un archivo abierto en modo de lectura.</li>
+                    <li>fgetc(): Se utiliza para leer un carácter desde un archivo abierto en modo de lectura.</li>
+                    <li>feof(): Se utiliza para verificar si se ha alcanzado el final de un archivo después de leer.</li>
+                    <li>filesize(): Se utiliza para obtener el tamaño de un archivo en bytes.</li>
+                    <li>file_exists(): Se utiliza para verificar si un archivo existe en el sistema de archivos.</li>
+                    <li>is_file(): Se utiliza para verificar si una ruta es un archivo regular.</li>
+                    <li>is_dir(): Se utiliza para verificar si una ruta es un directorio.</li>
+                    <li>rename(): Se utiliza para cambiar el nombre de un archivo o directorio.</li>
+                    <li>unlink(): Se utiliza para eliminar un archivo.</li>
+                </ul>
+                <h2>Elabora un programa básico con PHP que permita crear un archivo de texto en el servidor, describe el funcionamiento y elementos utilizados. Inserta el programa embebido con repplit en tu página.</h2>
+                <pre><code>
+                &lt;?php
+                $file = fopen("archivo.txt","w") or die("No fue posible crear el archivo");
+                $txt = "Holaaaaaaa";
+                fwrite($file,$txt);
+                fclose($file);
+                ?&gt;
+                </code></pre>
+                <h2>¿Cómo se utiliza el método Open/Read en el manejo de archivos con PHP?</h2>
+                <p>Para utilizar el método Open/Read en el manejo de archivos con PHP, se utiliza la función "fopen" con el modo "r" (lectura), seguida de la función "fgets" o "fread" para leer el contenido del archivo y la función "fclose" para cerrar el archivo.</p>
+                <h2>¿Cómo se utiliza el método Create/Write en el manejo de archivos con PHP?</h2>
+                <p>Para utilizar el método Create/Write en el manejo de archivos con PHP, se utiliza la función "fopen" con el modo "w" (escritura), seguida de la función "fwrite" o "fput" para escribir el contenido en el archivo y la función "fclose" para cerrar el archivo.</p>
+                <h2>Finamente, concluye cuales serían las ventajas de integrar PHP en una página web.</h2>
+                <p>PHP permite crear páginas web dinámicas que pueden responder a las acciones del usuario y mostrar contenido personalizado. Así mismo es compatible con una amplia gama de sistemas operativos y servidores web y es fácil de utilizar para aquellos que tienen experiencia con HTML.</p>
+                <h2>¿Qué hace la etiqueta input de HTML y como se utilizan?</h2>
+                <p>La etiquete input se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario. Se utiliza una etiqueta llamada "form", seguido de un input, o sea la forma en la que se pide información al usuario.</p>
+                <h2>¿Qué es el lenguaje JavaScript?</h2>
+                <p>Es un lenguaje de programación interpretado, por lo que no es necesario compilar los programas para ejecutarlos. En otras palabras, los programas escritos con JavaScript se pueden probar directamente en cualquier navegador sin necesidad de procesos intermedios.</p>
+                <h2>¿Para qué sirve el leguaje JS?</h2>
+                <p>JavaScript es un lenguaje de programación que se utiliza principalmente para crear páginas web dinámicas.</p>
+                <h2>¿A qué se refiere el DOM (Document Object model) en el desarrollo Web?</h2>
+                <p>El DOM es una representación en memoria de un documento HTML que permite interactuar con los elementos de la página web mediante JavaScript. Permite la modificación y manipulación dinámica de la estructura, contenido y estilo de la página.</p>
+                <h2>¿Cuál es la diferencia entre los archivos HTML, CSS y JS?</h2>
+                <ul>
+                    <li>HTML es el lenguaje de marcado utilizado para crear la estructura y el contenido de una página web.</li>
+                    <li>CSS es un lenguaje de estilo utilizado para controlar el aspecto y la presentación de una página web creada con HTML.</li>
+                    <li>JavaScript es un lenguaje de programación utilizado para agregar interactividad y funcionalidad dinámica a una página web. Permite manipular el contenido HTML y CSS en respuesta a la interacción del usuario, realizar cálculos, validar formularios, realizar solicitudes de red, entre otras muchas funcionalidades.</li>
+                </ul>
+                <h2>¿Para qué sirve la etiqueta "script>"?</h2>
+                <p>Se utiliza para poder insetar codigo Js en una pagina HTML.</p>
+                <h2>¿En qué consiste los 3 métodos para cambiar elementos tipo Tag Name, ID y Class Name con JS?</h2>
+                <ul>
+                    <li>Para cambiar elementos por su nombre de etiqueta, se utiliza el metodo getElementsByTagName()</li>
+                    <li>Para cambiar elementos por su ID, se utiliza el metodo getElementById()</li>
+                    <li>Para cambiar elementos por su Clase, se utiliza el metodo getElementByClass()</li>
+                </ul>
+                <h2>Elabora en Replit un programa básico “Hola mundo” con JS, describe el funcionamiento y elementos utilizados.</h2>
+                <pre><code>
+                &lt;script&gt;
+                    document.write("Hola Mundo");
+                &lt;/script&gt;
+                </code></pre>
+                <h2>¿Cuál es la sintaxis de la programación en JS?</h2>
+                <ul>
+                    <li>No se tienen en cuenta los espacios en blanco y las nuevas líneas.</li>
+                    <li>Se distinguen las mayúsculas y minúsculas.</li>
+                    <li>No se define el tipo de las variables.</li>
+                    <li>No es necesario terminar cada sentencia con el carácter de punto y coma (;).</li>
+                </ul>
+                <h2>¿Cómo se declaran variables en JS?</h2>
+                <p>Las variables en JavaScript se crean mediante la palabra reservada “var”.</p>
+                <pre><code>
+                &lt;script&gt;
+                    var numero_1 = 3;
+                    var numero_2 = 1;
+                    var resultado = numero_1 + numero_2;
+                &lt;/script&gt;
+                </code></pre>
+                <h2>¿Cómo se declaran funciones en JS?</h2>
+                <p>Las funciones en JavaScript se definen mediante la palabra reservada function, seguida del nombre de la función.</p>
+                <pre><code>
+                &lt;script&gt;
+                    function suma_y_muestra() {
+                        resultado = numero1 + numero2;
+                        alert("El resultado es " + resultado);
+                    }
+                &lt;/script&gt;
+                </code></pre>
+                <h2>¿Cómo se llaman funciones en JS?</h2>
+                <pre><code>
+                &lt;script&gt;
+                    suma_y_muestra(3,4);
+                &lt;/script&gt;
+                </code></pre>
+                <h2>¿Cómo declaras una función interna de un HTML con JS y cómo declaras un documento externo con JS?</h2>
+                <p>El código JavaScript se encierra entre etiquetas "script" y se incluye en cualquier parte del documento.</p>
+                <h2>¿Cuáles ciclos de programación están disponibles en JS?</h2>
+                <ul>
+                    <li>For</li>
+                    <li>While</li>
+                    <li>Do while</li>
+                </ul>
+                <h2>¿Cuáles funciones de condicional están disponibles en JS?</h2>
+                <ul>
+                    <li>If</li>
+                    <li>Switch</li>
+                    <li>Operador Ternario ?:</li>
+                </ul>
+                <h2>Etiquetas Input HTML</h2>
+                <ul>
+                    <li>Tipo "Texto": Nombre: <input type="text" name="nombre"><br></li>
+                    <li>Tipo "Week": Selecciona semana: <input type="week" name="week"><br></li>
+                    <li>Tipo "URL": Añade tu URL: <input type="url" name="url"><br></li>
+                    <li>Tipo "Hora": Selecciona una hora: <input type="time" name="hora"><br></li>
+                    <li>Tipo "Tel": Número Telefónico: <input type="tel" name="tel"><br></li>
+                    <li>Tipo "Busqueda": Buscar en Google: <input type="search" name="search"><br></li>
+                    <li>Tipo "Rango": Valores (0-100): <input type="range" name="rango"><br></li>
+                    <li>Tipo "Cantidad": Cantidad: <input type="number" name="cantidad"><br></li>
+                    <li>Tipo "Mes": Cumpleaños (Mes, año): <input type="month" name="mes"><br></li>
+                    <li>Tipo "Oculto": First name: <input type="hidden" name="firstname"><br></li>
+                    <li>Tipo "Archivo": Seleccione archivo: <input type="file" name="archivo"><br></li>
+                    <li>Tipo Imagen: <input type="image" name="image"><br></li>
+                    <li>Tipo "Email": Ingresa Email: <input type="email" name="email"><br></li>
+                    <li>Tipo "Hora Local": Cumpleaños (Fecha y hora): <input type="datetime-local" name="datetime"><br></li>
+                    <li>Tipo "Fecha": Graduación: <input type="date" name="date"><br></li>
+                    <li>Tipo "Color": Selecciona un color: <input type="color" name="color"><br></li>
+                    <li>Tipo "Boton": <input type="button" value="Botón"><br></li>
+                    <li>Tipo "checkbox": Quiero una hamburguesa: <input type="checkbox" name="hamburguesa"><br></li>
+                    <li>Tipo "Radio Button": 
+                        <input type="radio" name="band" value="metallica"> Metallica
+                        <input type="radio" name="band" value="iron_maiden"> Iron Maiden
+                        <input type="radio" name="band" value="avenged_sevenfold"> Avenged Sevenfold
+                    </li>
+                    <li>Tipo "Reset": 
+                        Primer Nombre: <input type="reset" name="reset"><br>
+                        Apellido: <input type="reset" name="reset"><br>
+                    </li>
+                    <li>Tipo "Submit": 
+                        Primer Nombre: <input type="submit" name="submit"><br>
+                        Apellido: <input type="submit" name="submit"><br>
+                    </li>
+                    <li>Tipo "Contraseña": 
+                        Usuario: <input type="text" name="usuario"><br>
+                        Contraseña: <input type="password" name="password"><br>
+                    </li>
+                </ul>
+                <h2>Conclusiones</h2>
+                <p>En conclusión, el lenguaje PHP es una herramienta esencial para el desarrollo web dinámico. Su capacidad para interactuar con bases de datos y procesar formularios lo hace indispensable en la creación de aplicaciones web interactivas y funcionales. La comprensión de la sintaxis y las funciones básicas de PHP, así como su integración con HTML y la gestión de archivos, proporciona una base sólida para desarrollar proyectos web robustos y eficientes. La flexibilidad y el soporte amplio de PHP en diversos servidores y plataformas lo consolidan como una opción preferida para desarrolladores web. Además, el conocimiento de JavaScript y su interacción con el DOM permite añadir interactividad y dinamismo a las páginas web, mejorando significativamente la experiencia del usuario. Integrar estas tecnologías de manera efectiva resulta en aplicaciones web modernas y responsivas que cumplen con las demandas actuales de funcionalidad y rendimiento.</p>
+                <h2>Referencias</h2>
+                <ul>
+                    <li><a href="https://www.php.net/manual/es/intro-whatis.php">https://www.php.net/manual/es/intro-whatis.php</a></li>
+                    <li><a href="https://uniwebsidad.com/libros/javascript">https://uniwebsidad.com/libros/javascript</a></li>
+                    <li><a href="https://www.w3schools.com/js/default.asp">https://www.w3schools.com/js/default.asp</a></li>
+                    <li><a href="https://www.w3schools.com/tags/tag_input.asp">https://www.w3schools.com/tags/tag_input.asp</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
